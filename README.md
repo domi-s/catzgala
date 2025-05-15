@@ -1,18 +1,38 @@
-# St Catherine's College Gala 2025
+# sv
 
-Welcome to the official website for the St Catherine's College Gala 2025.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-This website built in Svelte is a basic template that can be used for other events.
+## Creating a project
 
-## Technologies used
+If you're seeing this, you've probably already done this step. Congrats!
 
-- Svelte 5, used for its convenience and efficiency
-- Tailwind 4, because it just is the best
+```bash
+# create a new project in the current directory
+npx sv create
 
-## Key features
+# create a new project in my-app
+npx sv create my-app
+```
 
-The key aspects I was interested in while building this app were:
+## Developing
 
-- Simplicity: No yapping, straight to the point
-- Accessibility: Navigation is easy on any device
-- Efficiency: There should only be limited loading time
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
